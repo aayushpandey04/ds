@@ -22,7 +22,7 @@ while(choice != 9):
     print('9. Exit')
     choice = int(input("Enter your choice: "))
     if choice == 1:
-        print('Information of dataset:\n', df.info)
+        print('Information of dataset:\n', df.info())
         print('Shape of Dataset (row x column): ', df.shape)
         print('Columns Name: ', df.columns)
         print('Total elements in dataset: ', df.size)
@@ -59,7 +59,7 @@ while(choice != 9):
     if choice == 5:
         df2 = pd.read_csv('Iris.csv')
 
-        print('Information of dataset:\n', df2.info)
+        print('Information of dataset:\n', df2.info())
         print('Shape of Dataset (row x column): ', df2.shape)
         print('Columns Name: ', df2.columns)
         print('Total elements in dataset: ', df2.size)
