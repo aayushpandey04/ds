@@ -82,7 +82,7 @@ while (choice != 9):
         X = df[['rm', 'lstat']]
         y = df['medv']
         
-        X_train, X_test, y_test, y_train = train_test_split(X, y, test_size=0.20, random_state=0)
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=0)
         print('X_train = ', X_train)
         print('X_test = ', X_test)
 		
